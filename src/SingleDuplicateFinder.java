@@ -36,6 +36,11 @@ public class SingleDuplicateFinder {
             }
         }
 
+        // Restore the array to its original state
+        for (int i = 0; i < n; i++) {
+            arr[i] = Math.abs(arr[i]);
+        }
+
         return -1; // Indicates no duplicate found
     }
 }
